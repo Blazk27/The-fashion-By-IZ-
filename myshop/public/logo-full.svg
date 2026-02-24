@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+  <defs>
+    <!-- Gold gradient for logo -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4d78a"/>
+      <stop offset="50%" style="stop-color:#d4af37"/>
+      <stop offset="100%" style="stop-color:#b8962e"/>
+    </linearGradient>
+    <!-- Glow effect -->
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main SOSHIGH Text -->
+  <text x="200" y="65"
+        font-family="'Playfair Display', Georgia, serif"
+        font-size="56"
+        font-weight="700"
+        fill="url(#goldGradient)"
+        filter="url(#goldGlow)"
+        text-anchor="middle"
+        letter-spacing="4">
+    SOSHIGH
+  </text>
+</svg>
