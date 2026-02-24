@@ -29,7 +29,7 @@ export function Header() {
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative flex items-center gap-2">
               <img src="/logo-uploaded.png" alt={settings.shop_name}
-                className="relative w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-lg"
+                className="relative w-10 h-10 md:w-12 md:h-12 rounded-lg object-cover shadow-md"
                 onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
               <span className="text-blue-800 font-bold text-lg hidden sm:block">{settings.shop_name}</span>
             </div>
